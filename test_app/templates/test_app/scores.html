@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
+
+<div class="box">
+    <h3>Your scores : </h3>
+    {% for obj in objs %}
+    <h4>{{obj.test_id}} Test --- {{obj.percent}} % </h4>
+    <p>{{obj.correct}} correct out of {{obj.total}}</p>
+    <p>Your answers : {{obj.answers}} </p>
+    <p>{{obj.created}}</p>
+    {% endfor %}
+</div>
+{% endblock content %}

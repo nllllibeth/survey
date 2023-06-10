@@ -1,0 +1,14 @@
+
+{% load static %}
+<link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
+
+
+<div class="navbar">
+    <ul>
+        <li id="logo">Survey</li>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'results_page' %}">Results</a></li>
+    </ul>
+</div>
+
+

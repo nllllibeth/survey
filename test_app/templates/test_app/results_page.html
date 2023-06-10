@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
+
+<div class="box">
+    <h3>Type your code to get results </h3>
+    <form method='post' action="{% url 'get_scores' %}">
+    {% csrf_token %}
+    <div class="form__field">
+        <label>Code: </label>
+        <input
+            type="text"
+            name="login"
+            required/>
+        <span></span>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+{% endblock content %}

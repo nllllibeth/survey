@@ -1,0 +1,86 @@
+body, .container {
+    margin: 0;
+    background-color: rgb(201, 201, 201);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(7, 21, 80);
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 40px;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid rgb(7, 21, 80);
+}
+.navbar .li {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(7, 21, 80);
+}
+#logo {
+    font-weight: bold;
+}
+a:link {
+    text-decoration: none;
+    color: rgb(7, 21, 80);
+}
+a:visited {
+    color: rgb(7, 21, 80);
+}
+a:hover {
+    color: rgb(19, 111, 192);
+    text-decoration: none;
+}
+a:active {
+    color: rgb(19, 111, 192);
+    text-decoration: underline;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 40px 1fr;
+
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.container div{
+    float: left;
+}
+#title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+}
+#text{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+}
+.card {
+    padding: 20px;
+    padding-left: 30px;
+}
+.link_block a{
+    display: block;
+    height: 50px;
+    color: aliceblue;
+    background-color: rgb(7, 21, 80);
+}
+.link_block a:hover{
+    color: rgb(19, 111, 192);
+}
+.box {
+    padding-left: 30px;
+    padding-top: 10px;
+}

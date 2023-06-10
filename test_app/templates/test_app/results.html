@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
+
+<div class="box">
+    <div id="title">Your result: </div>
+    <div> Code : {{login}} </div>
+    <div>
+        <h1>Result : {{percent}} %</h1>
+        <p>{{correct}}/{{total}} </p>
+        <p>{{time}}</p>
+    </div>
+    <div>
+        <a href="{% url 'create' login %}">Return to Test Page to complete another test</a>
+    </div>
+    <div>
+        <a href="{% url 'results_page' %}">All results</a>
+    </div>
+</div>
+
+{% endblock content %}

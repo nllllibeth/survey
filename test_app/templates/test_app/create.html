@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
+
+<div class="container">
+    <div id="title">
+        <p>Choose a test to take</p>
+    </div>
+    <div id="text">Your Code : {{login}}</div>
+    <div class="link_block"> 
+        <a href="{% url 'vote' iq_test.id login %}">IQ Test </a>
+    </div>
+    <div class="link_block">
+        <a href="{% url 'vote' eq_test.id login %}">EQ Test </a>
+    </div>
+</div>
+{% endblock content %}
